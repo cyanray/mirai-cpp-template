@@ -1,3 +1,5 @@
+# CMake 版本要求 (最低 3.1)
+cmake_minimum_required (VERSION 3.1)
 # 项目名称
 project(my-qqrobot)
 # 设置项目的 C++ 标准
