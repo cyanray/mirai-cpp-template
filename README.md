@@ -5,7 +5,16 @@
 
 ## 使用方法
 
-使用 Visual Studio 或 Visual Studio Code 直接打开整个文件夹即可。
+使用以下指令克隆本仓库
+
+```bash
+git clone https://github.com/cyanray/mirai-cpp-template.git --recursive
+cd mirai-cpp-template
+# 更新 mirai-cpp 到最新
+git submodule update
+```
+
+然后使用 Visual Studio 或 Visual Studio Code 直接打开整个文件夹即可。
 
 本模板编译目标为可执行文件，其主函数位于 **src/main.cpp** 。
 
