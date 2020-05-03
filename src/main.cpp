@@ -5,6 +5,7 @@
 // 如果有人在群里撤回，那么机器人会把撤回的内容再发出来
 
 #include <iostream>
+#include <map>
 #include <mirai.h>
 #include "myheader.h"
 
