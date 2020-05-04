@@ -6,7 +6,7 @@ project(my-qqrobot)
 set(CMAKE_CXX_STANDARD 11)
 
 # 不要构建 mirai-cpp 自带的 examples
-set(MIRAI_CPP_BUILD_EXAMPLES OFF)
+set(MIRAI_CPP_BUILD_EXAMPLES OFF CACHE BOOL "Build examples" FORCE)
 # 添加子模块 mirai-cpp
 add_subdirectory(mirai-cpp)
 
