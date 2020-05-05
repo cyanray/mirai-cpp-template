@@ -24,6 +24,15 @@ git submodule update --init --force --remote
 
 mirai-cpp 的说明文档：[使用说明](https://github.com/cyanray/mirai-cpp/blob/master/doc/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md)
 
+## 更新 mirai-cpp 到最新
+
+直接在 template 项目根目录执行以下指令:
+
+```bash
+# 更新 mirai-cpp 到最新
+git submodule update --init --force --remote
+```
+
 ## 编译出 Linux 可执行文件、部署到服务器上
 
 操作方法：
