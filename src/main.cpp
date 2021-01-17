@@ -24,7 +24,7 @@ int main()
 	{
 		try
 		{
-			bot.Auth("InitKeyVl0CEUzZ", 211000000_qq);
+			bot.Auth("mirai-api-http设置的AuthKey", 211000000_qq);
 			break;
 		}
 		catch (const std::exception& ex)
@@ -35,6 +35,7 @@ int main()
 	}
 	cout << "Bot Working..." << endl;
 
+	// 用map记录哪些群启用了“反撤回”功能
 	map<GID_t, bool> groups;
 
 	bot.On<GroupMessage>(
