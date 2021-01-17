@@ -8,6 +8,9 @@
 
 ```bash
 git clone https://github.com/cyanray/mirai-cpp-template.git --recursive
+cd mirai-cpp-template
+# 更新 mirai-cpp 到最新
+git submodule update --init --force --remote
 ```
 
 然后使用 Visual Studio 或 Visual Studio Code 直接打开整个文件夹即可。
@@ -41,6 +44,7 @@ git submodule update --init --force --remote
 
 ```bash
 cd mirai-cpp
+git pull
 git checkout v1.8.4
 ```
 
