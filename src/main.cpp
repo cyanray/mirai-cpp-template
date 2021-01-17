@@ -65,14 +65,14 @@ int main()
 
 
 	bot.On<GroupRecallEvent>(
-		[&](GroupRecallEvent gm)
+		[&](GroupRecallEvent e)
 		{
 			try
 			{
-				if (!groups[gm.Group.GID]) return;
-				auto recalled_mc = bot.GetGroupMessageFromId(gm.MessageId).MessageChain;
+				if (!groups[e.Group.GID]) return;
+				auto recalled_mc = bot.GetGroupMessageFromId(e.MessageId).MessageChain;
 				auto mc = "刚刚有人撤回了: " + recalled_mc;
-				bot.SendMessage(gm.Group.GID, mc);
+				bot.SendMessage(e.Group.GID, mc);
 			}
 			catch (const std::exception& ex)
 			{
