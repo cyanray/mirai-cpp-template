@@ -2,8 +2,8 @@
 cmake_minimum_required (VERSION 3.1)
 # 项目名称（建议修改）
 project(my-qqrobot)
-# 设置项目的 C++ 标准（mirai-cpp所需的最低标准是c++11，建议使用最新的cpp标准）
-set(CMAKE_CXX_STANDARD 11)
+# 设置项目的 C++ 标准
+set(CMAKE_CXX_STANDARD 17)
 
 # 不要构建 mirai-cpp 自带的 examples
 set(MIRAI_CPP_BUILD_EXAMPLES OFF CACHE BOOL "Build examples" FORCE)
