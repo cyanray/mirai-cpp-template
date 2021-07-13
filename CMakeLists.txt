@@ -26,7 +26,10 @@ include_directories(include)
 target_link_libraries(${PROJECT_NAME} PRIVATE mirai-cpp)
 # 使用 mirai-cpp 静态库
 target_compile_definitions(${PROJECT_NAME} PRIVATE MIRAICPP_STATICLIB)
-# gcc 要链接 pthread
+
 if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    # 链接 pthread
     target_link_libraries(${PROJECT_NAME} PRIVATE pthread)
+    # 静态链接 libgcc 和 libstdc++
+    target_link_libraries(${PROJECT_NAME} PRIVATE -static-libgcc -static-libstdc++)
 endif()
