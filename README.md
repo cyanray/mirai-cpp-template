@@ -22,7 +22,7 @@ git submodule update --init --force --remote
 源文件请添加到 **src** 目录中，并且不要忘记修改 **CMakeLists.txt**。（参考CMakeLists.txt中的注释进行修改）
 
 
-mirai-cpp 的说明文档：[使用说明](https://github.com/cyanray/mirai-cpp/blob/master/doc/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md)
+mirai-cpp 的说明文档：[使用说明](https://github.com/cyanray/mirai-cpp/blob/master/doc/Documentation.md)
 
 ## 切换 mirai-cpp 版本
 
